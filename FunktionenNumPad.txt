@@ -83,18 +83,18 @@ function GibNummerAus () {
     }
     pins.digitalWritePin(DigitalPin.P15, 0)
     basic.pause(10)
-    pins.digitalWritePin(DigitalPin.P16, 1)
+    pins.digitalWritePin(DigitalPin.P10, 1)
     if (pins.digitalReadPin(DigitalPin.P1) == 1) {
-        pins.digitalWritePin(DigitalPin.P16, 0)
+        pins.digitalWritePin(DigitalPin.P10, 0)
         return 3
     } else if (pins.digitalReadPin(DigitalPin.P2) == 1) {
-        pins.digitalWritePin(DigitalPin.P16, 0)
+        pins.digitalWritePin(DigitalPin.P10, 0)
         return 6
     } else if (pins.digitalReadPin(DigitalPin.P8) == 1) {
-        pins.digitalWritePin(DigitalPin.P16, 0)
+        pins.digitalWritePin(DigitalPin.P10, 0)
         return 9
     }
-    pins.digitalWritePin(DigitalPin.P16, 0)
+    pins.digitalWritePin(DigitalPin.P10, 0)
     return 12
 }
 let toAdd;
